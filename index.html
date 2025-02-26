@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Engine Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the Ad Engine</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#ad-dashboard">Ad Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section id="home">
+        <h2>Featured Ads</h2>
+        <div id="ad-container">
+            <!-- Ads will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Ad Programming Dashboard -->
+    <section id="ad-dashboard">
+        <h2>Create Your Ad</h2>
+        <form id="ad-form">
+            <label for="ad-title">Ad Title:</label>
+            <input type="text" id="ad-title" required>
+            <label for="ad-content">Ad Content:</label>
+            <textarea id="ad-content" required></textarea>
+            <label for="ad-image">Ad Image URL (optional):</label>
+            <input type="url" id="ad-image">
+            <button type="submit">Submit Ad</button>
+        </form>
+        <h3>Your Ads</h3>
+        <div id="user-ads">
+            <!-- User-created ads will appear here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ad Engine Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
